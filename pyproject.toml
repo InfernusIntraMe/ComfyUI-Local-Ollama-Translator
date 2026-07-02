@@ -1,0 +1,12 @@
+[project]
+name = "comfyui-local-ollama-translator"
+description = "Local Ollama translation node for ComfyUI with English/Simplified Chinese prompt translation and privacy-first localhost defaults."
+version = "1.0.0"
+license = { file = "LICENSE" }
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/InfernusIntraMe/ComfyUI-Local-Ollama-Translator"
+
+# Add a [tool.comfy] section after creating a Comfy Registry publisher.
+# See the Comfy Registry publishing docs for PublisherId and DisplayName.
