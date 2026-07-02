@@ -1,0 +1,17 @@
+# Development/cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local editor/system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local archives and scratch files
+*.zip
+*.7z
+*.rar
+*.log
