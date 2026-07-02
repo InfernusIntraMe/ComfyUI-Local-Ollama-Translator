@@ -49,7 +49,14 @@ Other multilingual models can work too. Set the node's `model` field to match yo
 Clone this repository into your ComfyUI custom nodes folder:
 
 ```cmd
-cd /d X:\AIX\ComfyUI\custom_nodes
+cd /d path\to\ComfyUI\custom_nodes
+git clone https://github.com/InfernusIntraMe/ComfyUI-Local-Ollama-Translator.git
+```
+
+Example:
+
+```cmd
+cd /d D:\AI\ComfyUI\custom_nodes
 git clone https://github.com/InfernusIntraMe/ComfyUI-Local-Ollama-Translator.git
 ```
 
