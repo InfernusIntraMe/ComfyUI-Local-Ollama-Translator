@@ -1,0 +1,2 @@
+# No external Python dependencies.
+# This node uses only the Python standard library.
