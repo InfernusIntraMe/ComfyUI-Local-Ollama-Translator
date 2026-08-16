@@ -1,12 +1,14 @@
 [project]
-name = "comfyui-local-ollama-translator"
-description = "Local Ollama translation node for ComfyUI with English/Simplified Chinese prompt translation and privacy-first localhost defaults."
+name = "local-ollama-translator"
+description = "Local-first Ollama translation node for ComfyUI with English/Simplified Chinese prompt translation, GUI preview, and localhost-only privacy defaults."
 version = "1.0.0"
 license = { file = "LICENSE" }
 dependencies = []
 
 [project.urls]
 Repository = "https://github.com/InfernusIntraMe/ComfyUI-Local-Ollama-Translator"
+"Bug Tracker" = "https://github.com/InfernusIntraMe/ComfyUI-Local-Ollama-Translator/issues"
 
-# Add a [tool.comfy] section after creating a Comfy Registry publisher.
-# See the Comfy Registry publishing docs for PublisherId and DisplayName.
+[tool.comfy]
+PublisherId = "infernusintrame"
+DisplayName = "Local Ollama Translator"
