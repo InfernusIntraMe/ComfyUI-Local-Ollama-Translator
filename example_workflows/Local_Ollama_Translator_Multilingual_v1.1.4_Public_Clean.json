@@ -1,0 +1,442 @@
+{
+  "id": "1e183c3a-9979-4231-a01c-bbf6ae43d222",
+  "revision": 0,
+  "last_node_id": 4,
+  "last_link_id": 2,
+  "nodes": [
+    {
+      "id": 2,
+      "type": "LocalOllamaModelSelector",
+      "pos": [
+        220,
+        390
+      ],
+      "size": [
+        400,
+        60
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "STRING",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "LocalOllamaModelSelector"
+      },
+      "widgets_values": [
+        "qwen3:8b"
+      ]
+    },
+    {
+      "id": 1,
+      "type": "LocalOllamaTranslateMultilingual",
+      "pos": [
+        650,
+        150
+      ],
+      "size": [
+        760,
+        860
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "system_prompt",
+          "name": "system_prompt",
+          "shape": 7,
+          "type": "STRING",
+          "link": 2
+        },
+        {
+          "localized_name": "model_override",
+          "name": "model_override",
+          "shape": 7,
+          "type": "STRING",
+          "link": 1
+        },
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "source_language",
+          "name": "source_language",
+          "type": "COMBO",
+          "widget": {
+            "name": "source_language"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "target_language",
+          "name": "target_language",
+          "type": "COMBO",
+          "widget": {
+            "name": "target_language"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "style",
+          "name": "style",
+          "type": "COMBO",
+          "widget": {
+            "name": "style"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "preserve_terms",
+          "name": "preserve_terms",
+          "type": "STRING",
+          "widget": {
+            "name": "preserve_terms"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "system_prompt_mode",
+          "name": "system_prompt_mode",
+          "type": "COMBO",
+          "widget": {
+            "name": "system_prompt_mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "external_system_prompt",
+          "name": "external_system_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "external_system_prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "STRING",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "thinking_enabled",
+          "name": "thinking_enabled",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "thinking_enabled"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "retry_on_refusal",
+          "name": "retry_on_refusal",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "retry_on_refusal"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "endpoint",
+          "name": "endpoint",
+          "type": "STRING",
+          "widget": {
+            "name": "endpoint"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "keep_alive",
+          "name": "keep_alive",
+          "type": "STRING",
+          "widget": {
+            "name": "keep_alive"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "num_ctx",
+          "name": "num_ctx",
+          "type": "INT",
+          "widget": {
+            "name": "num_ctx"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "temperature",
+          "name": "temperature",
+          "type": "FLOAT",
+          "widget": {
+            "name": "temperature"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "top_p",
+          "name": "top_p",
+          "type": "FLOAT",
+          "widget": {
+            "name": "top_p"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "timeout_seconds",
+          "name": "timeout_seconds",
+          "type": "INT",
+          "widget": {
+            "name": "timeout_seconds"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "allow_remote_endpoint",
+          "name": "allow_remote_endpoint",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "allow_remote_endpoint"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "force_rerun",
+          "name": "force_rerun",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "force_rerun"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "debug_logging",
+          "name": "debug_logging",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "debug_logging"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "thinking_effort",
+          "name": "thinking_effort",
+          "type": "COMBO",
+          "widget": {
+            "name": "thinking_effort"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "max_output_tokens",
+          "name": "max_output_tokens",
+          "type": "INT",
+          "widget": {
+            "name": "max_output_tokens"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "translated_text",
+          "name": "translated_text",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "source_text",
+          "name": "source_text",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "thinking_text",
+          "name": "thinking_text",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "LocalOllamaTranslateMultilingual"
+      },
+      "widgets_values": [
+        "a masked warrior beneath a violet moon, black armor, rain, cinematic lighting",
+        "Auto Detect",
+        "Japanese",
+        "Image Prompt",
+        "ComfyUI, LoRA, GGUF, Flux, Krea 2, Z-Image, Qwen, Wan, SDXL",
+        "Built-In + External Rules",
+        "",
+        "qwen3:8b",
+        false,
+        true,
+        "http://127.0.0.1:11434",
+        "0",
+        8192,
+        0.0,
+        0.7,
+        180,
+        false,
+        false,
+        false,
+        "Low",
+        4096
+      ]
+    },
+    {
+      "id": 3,
+      "type": "LocalOllamaTranslationPromptForge",
+      "pos": [
+        220,
+        150
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "profile",
+          "name": "profile",
+          "type": "COMBO",
+          "widget": {
+            "name": "profile"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "preserve_structure",
+          "name": "preserve_structure",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "preserve_structure"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "preserve_intensity",
+          "name": "preserve_intensity",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "preserve_intensity"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "refusal_resistance",
+          "name": "refusal_resistance",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "refusal_resistance"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_rules",
+          "name": "custom_rules",
+          "type": "STRING",
+          "widget": {
+            "name": "custom_rules"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "system_prompt",
+          "name": "system_prompt",
+          "type": "STRING",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "LocalOllamaTranslationPromptForge"
+      },
+      "widgets_values": [
+        "Image Prompt Translator",
+        true,
+        true,
+        true,
+        ""
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      2,
+      0,
+      1,
+      1,
+      "STRING"
+    ],
+    [
+      2,
+      3,
+      0,
+      1,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ue_links": [],
+    "links_added_by_ue": [],
+    "ds": {
+      "scale": 0.78,
+      "offset": [
+        185.0,
+        140.0
+      ]
+    }
+  },
+  "version": 0.4
+}
